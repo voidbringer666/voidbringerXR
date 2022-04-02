@@ -24,7 +24,7 @@ class App{
         this.mesh = new THREE.mesh( geometry, material );
         this.scene.add( this.mesh );
         
-	this.renderer.set.AnimationLoop( this.render.bind(this));
+	this.renderer.setAnimationLoop( this.render.bind(this));
 		
         window.addEventListener('resize', this.resize.bind(this) );
 	}	
