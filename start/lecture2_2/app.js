@@ -10,7 +10,7 @@ class App{
         this.camera.position.set(0,0,4);
         
         this.scene = new THREE.Scene();
-        this.scene.background = new THREE.Color( 0xaaaaaa );
+        this.scene.background = new THREE.Color( 0x000000 );
 		
 	const ambient = new THREE.HemisphereLight( 0xffffff, 0xbbbbff, 0.3 );
 	this.scene.add( ambient );
@@ -26,7 +26,7 @@ class App{
         
         
         const geometry = new THREE.BoxBufferGeometry();
-        const material = new THREE.MeshStandardMaterial( { color: 0xFF0000 });
+        const material = new THREE.MeshStandardMaterial( { color: 0xffffff });
         
         this.mesh = new THREE.Mesh( geometry, material );
         this.scene.add( this.mesh );
